@@ -1,0 +1,724 @@
+@font-face {
+  font-family:rekar;
+  src: url(tusker-grotesk-3500-medium.ttf);
+}
+* {
+  color: unset;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+::selection{
+  background-color:var(--third-bg-color);
+  color: var(--sec-text-color);
+}
+
+
+:root {
+  --bg-color: white;
+  --second-bg-color: rgb(244, 244, 244);
+  --third-bg-color:black;
+  --text-color: black;
+  --sec-text-color:white;
+  --min-color: #0057d9;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+  background:var(--bg-color) ;
+}
+
+/* nav bar */
+
+.navbar{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  z-index: 100000;
+}
+
+.nv{
+border-bottom: 1px solid grey ;
+  background:var(--bg-color) ;
+}
+
+
+.navbar .logo{
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 20px;
+  transition: 0.5s ease-in;
+  color: var(--sec-text-color);
+  font-weight: bold;
+}
+.navbar .logo:hover{
+  color: var(--min-color);
+}
+
+.navbar .logo2{
+  text-decoration: none ;
+  font-size: 1.3rem ;
+  margin: 20px ;
+  transition: 0.5s ease-in ;
+  color: var(--third-bg-color) ;
+  font-weight: bold ;
+}
+.navbar .logo2:hover{
+  color: var(--min-color) ;
+}
+
+
+.navbar .list{
+  list-style: none;
+  margin: 32px;
+  display: flex;
+  width: 800px;
+  justify-content: space-around;
+}
+.navbar .list li .a{
+  color: var(--sec-text-color);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  transition: 0.6s ease;
+}
+.navbar .list li .a:hover{
+  color: var(--min-color);
+}
+.navbar .list li .a2{
+  color: var(--third-bg-color) ;
+  font-weight: 700 ;
+  font-size: 1rem ;
+  letter-spacing: 2px ;
+  transition: 0.6s ease ;
+}
+.navbar .list li .a2:hover{
+  color: var(--min-color) ;
+}
+
+
+.sign-in{
+  position: relative;
+  width: 85px;
+  height: 35px;
+  background:var(--min-color);
+  color: var(--bg-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 0px solid var(--min-color);
+  border-radius: 30px;
+  right: 50px; 
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.sign-in:hover{
+  color:var(--third-bg-color) ;
+  background-color: var(--bg-color);
+  border: 1.5px solid grey;
+}
+
+/*image'akan w text w buttny yakam dana---------------------------------------------------------------*/
+
+.img {
+  position: relative;
+    width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.midle-text{
+  color: var(--sec-text-color);
+  position: absolute !important;
+  bottom: 50px !important;
+  left: 450px !important;
+  font-size: 4.3rem !important;
+  letter-spacing: 7px;
+  font-family: rekar;
+  text-align: center !important;
+}
+.left-text{
+  color: var(--sec-text-color);
+  position: absolute;
+  bottom: 200px;
+  left: 35px;
+}
+.left-text p{
+  
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.left-text span{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.left-text button{
+  position: absolute;
+  left:-1px;
+  width: 125px;
+  height: 45px;
+  margin-top: 5px;
+  background:var(--min-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 900;
+  font-weight: 700;
+  border: 0px solid var(--bg-color);
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.left-text button:hover{
+  color:var(--third-bg-color) ;
+  background-color: var(--bg-color);
+  border: 1.5px solid grey;
+}
+
+/* text w buttny dwam dana------------------------------------------------------------------*/
+
+
+.left-text-2{
+  color: var(--sec-text-color);
+  position: absolute;
+  bottom: 200px;
+  left: 35px;
+}
+.left-text-2 h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+ 
+.left-text-2 p{
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+
+.left-text-2 button{
+  position: absolute;
+  margin-top: 5px;
+  left:-1px;
+  width: 125px;
+  height: 45px;
+  background:var(--min-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 700;
+  font-weight: bold;
+  border: 0px solid var(--bg-color);
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.left-text-2 button:hover{
+  color:var(--third-bg-color) ;
+  background-color: var(--bg-color);
+  border: 1.5px solid grey;
+}
+
+/*dww buttonkay rast w chap bo goriny slide-------------------------------------------------*/
+.slidechanger1{
+  color: var(--bg-color);
+  position: absolute;
+  bottom: 300px;
+  left: 5px;
+  font-size: 3.3rem;
+  cursor: pointer;
+  opacity: 70%;
+}
+.slidechanger2{
+  color: var(--bg-color);
+  position: absolute;
+  bottom: 300px;
+  left: 1190px;
+  font-size: 3.3rem;
+  cursor: pointer;
+  opacity: 70%;
+}
+/*dww dotakay nawarast bo goriny slide------------------------------------------------*/
+
+
+.two-dots{
+  position: absolute;
+  bottom: 10px;
+  left: 575px;
+}
+.dot{
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px; 
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition:rekar 0.3s ease-in-out;
+}
+
+
+.active, .dot:hover{
+  background-color: #717171;
+}
+/*class fade bo  animation;y newan slide'akan la kty gorina---------------------------------------------*/
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+  from{opacity: .4;}
+  to{opacity: 1;}
+}
+@keyframes fade{
+  from{opacity: 0.4;}
+  to{opacity: 1;}
+}
+
+
+@keyframes fadeAnimation {
+  0% {
+      opacity: 70%;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
+.myslide {
+    /* Other styles ... */
+    animation: fadeAnimation 0.7s ease-in-out; /* Apply the keyframe animation */
+    opacity: 100%; /* Start with zero opacity */
+}
+
+
+
+
+/*  section find your trip dwam ------------------------------------------------------------- */
+
+
+.trips h1{
+margin-top:0px;
+font-size: 3rem;
+text-align: center;
+font-weight: bold;
+padding: 70px;
+}
+
+.trips-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin: 20px;
+
+}
+
+.trips-container .box-container{
+  position: relative;
+  left: 30px;
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border-radius: 2.5rem;
+  box-shadow: 0px 7px 15px var(--third-bg-color);
+}
+.box-container img{
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.box-container img:hover{
+  transform: scale(1.1);
+}
+
+.box-container .box-container-text{
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(rgba(0,0,0,0.2), var(--third-bg-color));
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: var(--sec-text-color);
+  transform: translateY(100%);
+  transition: 0.7s ease;
+}
+
+
+.box-container:hover .box-container-text{
+transform: translateY(0);
+}
+
+.box-container-text h3{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.box-container-text p{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.box-container-text a{
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 105px;
+  background-color: var(--min-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.box-container-text a i{
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  color: var(--bg-color);
+}
+
+.find-trips-button{
+  position: relative;
+  margin: 30px;
+  width: 150px;
+  height: 45px;
+  left: 500px;
+  background:var(--min-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0px solid var(--bg-color);
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.find-trips-button:hover{
+  color:var(--third-bg-color) ;
+  background-color: var(--bg-color);
+  border: 1.5px solid grey;
+}
+/*Section dwam (where to next)------------------------------------------------------------------*/
+
+.plan{
+  background: var(--second-bg-color);
+  width: 100%;
+  height: 100vh;
+}
+
+.plan-text{
+  position: relative;
+  padding: 70px;
+  text-align: left;
+  margin-left: 70px;
+  bottom: -40px;
+}
+
+.plan .plan-text p{
+  font-weight: 600;
+  }  
+.plan .plan-text h1{
+  font-size: 3rem;
+  }
+
+  .plan-button{
+    float: right;
+    bottom: 40px;
+    position: relative;
+    width: 180px;
+    height: 45px;
+    background:var(--min-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0px solid var(--bg-color);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+   
+  .plan-button:hover{
+    color:var(--third-bg-color) ;
+    background-color: var(--bg-color);
+    border: 1.5px solid grey;
+    }
+
+
+  .swiper {
+    width: 1120px !important;
+    height:400px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .swiper-wrapper{
+    right: 200px !important;
+    width: 320px !important;
+    height: 370px !important;
+    display: flex !important;
+    align-items: center !important;
+    column-gap: 30px !important;
+    margin-left: -220px !important;
+  }
+  
+
+
+
+  .swiper-slide {
+    position: relative !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 300px !important;
+    height:280px !important;
+    transition: 0.6s ease-in-out !important;
+    border-radius: 15px !important;
+    transition: 0.7s ease-in-out;
+  }
+  .swiper-slide:hover{
+    transform: scale(1.03) !important;
+    border: 3px solid var(--min-color) !important;
+  }
+
+
+
+  .swiper-slide img {
+   border-radius: 15px !important;
+   width: 100% !important;
+   height: 100% !important;
+  }
+
+  .swiper-slide .text{
+    position: absolute;
+  bottom: 0; 
+  left: 0;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  background: linear-gradient(rgba(0,0,0,0.35), var(--third-bg-color));
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: var(--sec-text-color);
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+  }
+  .swiper-slide:hover .text{
+    opacity: 100%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #0057d9 !important;
+  }
+
+  /*Section 3yam ---------------------------------------------------------------------------*/
+
+  .our-sponsor{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+  }
+  .third-text{
+    float: right;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-left: 700px;
+  }
+  
+
+  .third-text p{
+    letter-spacing: 1px;
+  }
+
+  .third-text a h1, .third-text a h1 span{
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+
+
+  
+  .third-img{
+    position: absolute;
+    width: 600px;
+    height: 333px;
+    margin: 120px 0px 0px 40px;
+  }
+  .third-img img{
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px var(--second-bg-color);
+  }
+
+
+
+
+  /*Section'y footer-----------------------------------------------------------------------------*/
+
+
+  
+  .footer-Section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    left: 130px;
+  }
+
+  .footer-left-side{
+    position: absolute;
+    left: 150px;
+  }
+
+  .footer-left-side .footer-logo{
+    color: var(--min-color);
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+  }
+
+  .footer-left-side p{
+    padding-bottom:20px;
+  }
+
+  .footer-left-side .socialMedia-logo{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    margin-right: 140px;
+  }
+  .footer-left-side .socialMedia-logo li{
+    font-size: 2rem;
+  }
+
+
+  .footer-left-side h2{
+    color: var(--min-color);
+    position: absolute;
+    width: 270px;
+  }
+  .footer-button{
+    position: relative;
+    top: 110px;
+    right: 5px;
+    width: 175px;
+    height: 35px;
+    background:var(--min-color);
+    color: var(--bg-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 0px solid var(--min-color);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .footer-button:hover{
+    color:var(--third-bg-color) ;
+    background-color: var(--bg-color);
+    border: 1.5px solid grey;
+    }
+
+    /*Section'y footer-destinations---------------------------------------------------------------*/
+
+    .footer-destinations{
+      position: absolute;
+      left:520px;
+    }
+
+    .footer-destinations ul{
+      list-style: none;
+      padding-top: 30px;
+      color: grey;
+      font-size: 14px;
+    }
+    .footer-destinations ul li{
+      padding: 5px;
+    }
+
+    /*Section'y footer-travel-interests-----------------------------------------------------------*/
+
+    
+    .footer-travel-interests{
+      position: absolute;
+      left:720px;
+    }
+
+    .footer-travel-interests ul{
+      list-style: none;
+      padding-top: 30px;
+      color: grey;
+      font-size: 14px;
+    }
+    .footer-travel-interests ul li{
+      padding: 5px;
+    }
+
+
+    /*Section'y footer-about-us---------------------------------------------------------------------*/
+
+     
+    .footer-about-us{
+      position: absolute;
+      left:920px;
+    }
+
+    .footer-about-us ul{
+      list-style: none;
+      padding-top: 30px;
+      color: grey;
+      font-size: 14px;
+    }
+    .footer-about-us ul li{
+      padding: 5px;
+    }
+
+    /*footer-copyRight-------------------------------------------------------------------------*/
+
+    .footer-copyRight{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 80px;
+      background-color: var(--third-bg-color);
+    }
+    
+    .footer-copyRigth-text p{
+      color: var(--sec-text-color);
+      position: absolute;
+    }
+
+    .footer-copyRight-iconTop{
+      position: relative;
+      width: 45px;
+      height: 45px;
+      border-radius: 15px;
+      left: 270px;
+      background-color: var(--min-color);
+      transition: 0.5s ease-in-out;
+    }
+    .footer-copyRight-iconTop a {
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      font-size: 2rem;
+      color: var(--sec-text-color);
+    }
+
+
+  
+    
+   
+ 

@@ -1,0 +1,84 @@
+
+
+.btn{
+  position: relative;
+  left: 30px;
+  width: 95px;
+  height: 35px;
+  background-color: #1f242d;
+  color: white;
+  border: 1px solid #1f242d;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn::before{
+  position: absolute;
+  content: '';
+  width: 95px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg,transparent ,
+  transparent,transparent, white,white,white);
+  animation: rotate 2s linear infinite;
+}
+.btn::after{
+  font-weight: bold;
+  padding-top: 6px;
+  text-align: center;
+  content: 'SUBMIT';
+  position: absolute;
+  width: 90px;
+  height: 24px;
+  margin-top: 2px;
+  margin-left: 2.5px;
+  top: 0;
+  left: 0;
+  background-color: #1f242d;
+}
+
+@keyframes rotate{
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+
+
+
+
+
+  <section>
+    <div class="lf">
+      <div class="label">
+      <label class="form1" for="email">Email</label>
+      <input for="email" class="form" name="email" type="email">
+<br>
+      <label class="form1" for="password">Password</label>
+      <input for="password" class="form" name="password" type="password">
+      </div>
+
+<div class="btn"></div>    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
